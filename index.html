@@ -15,46 +15,45 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Job Structure App</title>
   </head>
-  <body class="grey darken-4">
-    <div class="nav z-depth-0">
-      <div class="section center">
-        <h3 class="white-text center">- 🏂 Sports Exercises Tracker 🏸 -</h3>
-      </div>
+  <body>
+    <div class="pink section">
+      <h2 class="white-text center">Your Start-Up Structure</h2>
     </div>
 
-    <div class="section center">
-      <p class="grey-text flow-text">A fitness tracker for you</p>
+    <div class="grey lighten-3 section grey-text" style="position: relative">
+      <p class="flow-text center">🌈The Next Unihorn Company🦄</p>
+      <a
+        href="#modal"
+        class="btn-floating btn-large halfway-fab pink modal-trigger"
+      >
+        <i class="material-icons">add</i>
+      </a>
     </div>
 
-    <div class="container section">
-      <div class="row">
-        <div class="col s12 l5">
-          <button class="active" data-activity="cycling">Cycling</button>
-          <button data-activity="running">Running</button>
-          <button data-activity="swiming">Swimming</button>
-          <button data-activity="walking">Walking</button>
-        </div>
-        <div class="col s12 l6 push-l1">
-          <div class="canvas"></div>
-        </div>
-      </div>
-      <div class="row">
-        <form class="col m6 push-m3">
-          <p class="flow-text grey-text center">
-            How much <span>cycling</span> have you done today?
-          </p>
-          <input
-            type="text"
-            class="grey-text"
-            id="cycling"
-            placeholder="Distance in meters"
-          />
-          <p class="center pink-text error text-lighten-1"></p>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h4 class="pink-text center">👨‍💻 Add New Employee 👩‍💻</h4>
+        <form>
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Employee Name" />
+          </div>
+          <div class="input-field">
+            <input type="text" id="parent" placeholder="Reports to..." />
+          </div>
+          <div class="input-field">
+            <input type="text" id="department" placeholder="Department" />
+          </div>
+          <div class="input-field">
+            <button class="btn pink white-text">Add Employee</button>
+          </div>
         </form>
       </div>
     </div>
 
-    <!-- <div class="canvas"></div> -->
+    <div class="container">
+      <div class="canvas"></div>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
